@@ -1,0 +1,13 @@
+---
+- name: Check if Cake PHP is already set up.
+  stat: "path={{ beet_root }}/index.php"
+  register: cakephp_site
+
+- name: Create new Cake PHP project
+  command: >
+    {{ composer_path }} create-project cakephp/app {{ beet_root }} {{ cake_version }}
+    --prefer-dist
+    creates="{{ beet_root }}/vendor/autoload.php"
+  notify: restart webserver
+  when: cake_create_project and not cakephp_site.stat.exists
+  become: no

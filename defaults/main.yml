@@ -1,0 +1,4 @@
+---
+beet_root: "/path/to/project"
+cake_create_project: no
+cake_version: "*"
