@@ -1,4 +1,5 @@
 ---
+beet_root: "home/ubuntu/workspace"
 beet_project: cakephp
 cake_create_project: yes
 beet_mysql_database: "my_app"
