@@ -1,7 +1,0 @@
----
-beet_root: "home/ubuntu/workspace"
-beet_project: cakephp
-cake_create_project: yes
-beet_mysql_database: "my_app"
-beet_mysql_user: "my_app"
-beet_mysql_password: "secret"
