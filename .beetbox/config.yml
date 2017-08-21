@@ -2,6 +2,8 @@
 beet_domain: "cakephp.local"
 beet_root: "{{ beet_base }}/docroot"
 role_path: "{{ beet_home }}/provisioning/ansible/roles/beetboxvm.cakephp"
+php_packages_extra:
+  - php7.1-intl
 
 beet_project: cakephp
 cake_create_project: yes
